@@ -1,0 +1,111 @@
+/*Edit Texts section*/
+
+q {
+  font-size: 40px;
+  color: white;
+  font-style: italic;
+  align-content: center;
+}
+
+.fontadjust {
+  font-size: 15px;
+}
+
+p, li, figcaption {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+div {
+  font-size: 18px;
+  font-style: italic;
+  color: white;
+  display: flex;
+}
+
+/*hide items on load*/
+.popUpInterests, .popUpcode, .popUpFilms {
+  display: none;
+}
+
+.headerContainer {
+  display:flex;
+  flex-direction: column;
+}
+
+/*icon bar*/
+.icon-bar {
+  border: none;
+}
+.icon-bar a {
+  text-align: center;
+  padding:1rem;
+  background: transparent;
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.icon-bar a:hover {
+  background-color: black;
+}
+
+.icon-bar i {
+  display: block;
+  font-size: 1.5rem;
+  color:white;
+  
+}
+
+.pagecontent {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+    .profilepic {
+      border: 2px solid white;
+      border-radius: 25%;
+      margin: auto;
+    }
+
+.box1 {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box2 {
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Interestpics {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
+}
+.Interestpics:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/*Edits to background*/
+body {
+  background-image: url("ggbridge3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
