@@ -1,0 +1,27 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    font-size: 100px;
+
+  }
+
+  .container {
+      border: 10px red solid;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /*justify-content: space-evenly;*/
+      /*align-items: center;*/
+      align-content: center;
+      
+  }
+
+  .item {
+    border: 3px gold solid;
+    /*order: 0;*/
+    flex: 1 0 auto;
+    align-self: center;
+    text-align: center;
+
+}
+

@@ -1,10 +1,49 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
   }
 
 
+/* Nav bar*/
+.navBar {}
 
+.navBar a, .footerBar a {
+    color:white;
+    font-size: 50px;
+  }
+  
+
+
+/* footer bar*/
+
+.footerBar {
+    /*border: 10px solid red;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.socialMedia {
+    /*border: 30px solid gold;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.mediaIcon {
+   /* border: 15px solid black;*/
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+}
+
+
+  /* Backgrounds */
   .homePage {
     background-image: url("ggbridge3.jpg");
     background-repeat: no-repeat;
@@ -25,7 +64,7 @@ html {
     z-index: -1;
   }
   .contactPage {
-    background-image: url("San Fran.jpg");
+    background-image: url("Sunrise.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -33,3 +72,10 @@ html {
     bottom: 0;
     z-index: -1;
   }
+
+
+  /* change socialmedia based on screen size
+  .socialMedia {
+  flex-direction: column;
+  
+  */
