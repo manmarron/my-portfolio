@@ -3,26 +3,46 @@ html {
     scroll-behavior: smooth;
     font-size: 18px;
     font-weight: normal;
-    color: black;
+    color: white;
   }
 
 
 /* Nav bar*/
-.navBar {}
+.navBar {
+    /*border: 10px solid red;*/
+}
+.navcontainer {
+    /*border: 30px solid gold;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.navicons {
+    /*border: 15px solid black;*/
+    text-align: center;
+}
+
+
 
 .navBar a, .footerBar a {
     color:white;
     font-size: 50px;
   }
   
-
+/*page headers*/
+.pageheaders {
+    text-align: center;
+}
 
 /* footer bar*/
 
 .footerBar {
     /*border: 10px solid red;*/
+    bottom: 0px;
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
