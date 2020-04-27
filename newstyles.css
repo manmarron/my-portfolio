@@ -9,24 +9,19 @@ html {
 
 /* Nav bar*/
 .navBar {
-    /*border: 10px solid red;*/
-}
-.navcontainer {
-    /*border: 30px solid gold;*/
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-
-}
-
-.navicons {
-    /*border: 15px solid black;*/
     text-align: center;
+    justify-content: space-around;
+}
+
+.navIcon {
+    flex: 1 1 auto;
 }
 
 
-
+.navBar a:hover {
+    color: grey;
+}
 .navBar a, .footerBar a {
     color:white;
     font-size: 50px;
@@ -142,3 +137,4 @@ html {
   flex-direction: column;
   
   */
+
