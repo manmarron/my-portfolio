@@ -9,7 +9,7 @@
     </head>
 
     <body class="contactPage">
-
+        
         <div class="navBar">
             <div class="navIcon"><a href="index.html" class="test"><i class="fas fa-home"></i></a></div>
             <div class="navIcon"><a href="about.html"> <i class="fas fa-user"></i></a></div>
@@ -22,28 +22,55 @@
         <section>
             <div class="formelement">
                 <div class="inputFields">
-                    <input type="input" class="bubbleInput" placeholder="Name">
-                    <input type="input" class="bubbleInput" placeholder="Email">
-                    <textarea style="height: 6rem;" class="bubbleInput" placeholder="Please leave your message"></textarea>   
-                    <button class="submit">Send</button>
-                    <button class="clear">Reset</button>
+                    <input type="input" class="bubbleInput" id="name" placeholder="Name">
+                    <input type="input" class="bubbleInput" id="email" placeholder="Email">
+                    <textarea style="height: 6rem;" class="bubbleInput" id="subject" placeholder="Please leave your message"></textarea>   
+                    <button class="submit" id="submit">Send</button>
+                    <button class="clear" id="clear">Reset</button>
                 </div>
                 
             </div>
         </section>
-
+        
         <footer>
-            
-                <div class="socialMedia">
-                    <div class="mediaIcon"><a href="https://github.com/manmarron" target="_blank"><i class="fab fa-github"></i></a></div>
-                    <div class="mediaIcon"><a href="https://www.linkedin.com/in/nicholasmarron/" target="_blank"><i class="fab fa-linkedin"></i></div>
-                    <div class="mediaIcon"><a href="https://twitter.com/nj_marron" target="_blank"><i class="fab fa-twitter"></i></a></div>
-                    <div class="mediaIcon"><a href="https://www.facebook.com/nick.marron" target="_blank"><i class="fab fa-facebook"></i></a></div>
-                    <div class="mediaIcon">&copy Nick Marron</div>
-                </div>
-                
+            <div class="socialMedia">
+                <div class="mediaIcon"><a href="https://github.com/manmarron" target="_blank"><i class="fab fa-github"></i></a></div>
+                <div class="mediaIcon"><a href="https://www.linkedin.com/in/nicholasmarron/" target="_blank"><i class="fab fa-linkedin"></i></div>
+                <div class="mediaIcon"><a href="https://twitter.com/nj_marron" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                <div class="mediaIcon"><a href="https://www.facebook.com/nick.marron" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                <div class="mediaIcon">&copy Nick Marron</div>
+            </div>
         </footer>
 
     </body>
+
+
+    <script>
+
+        document.getElementById("submit").addEventListener('click', submitForm)
+            function submitForm() {
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const subject = document.getElementById("subject").value;
+                
+                if (name !== '' && email !== '' && subject !== '') {
+                    window.alert(name + ',\n' + email + ',\n' + subject)
+                } else {
+                    window.alert("Please fill in all fields");
+                }
+            }
+    </script>
+
+<script>
+     document.getElementById("clear").addEventListener('click', clearForm)
+    function clearForm() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+
+
+
+    }
+    </script>
 
 </html>
