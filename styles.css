@@ -26,6 +26,7 @@ div {
   font-style: italic;
   color: white;
   display: flex;
+  
 }
 
 /*hide items on load*/

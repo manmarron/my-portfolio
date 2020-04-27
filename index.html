@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Marron</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="newstyles.css">
     <script src="https://kit.fontawesome.com/c76ea22cee.js" crossorigin="anonymous"></script>
 </head>
 <body class="homePage">
@@ -12,77 +12,36 @@
 
 
     <header class="headerContainer">
-        <div><q>The way to get started is to quit talking and begin doing. <span class="fontadjust">-Walt Disney</span></q></div>
+        
 
-        <div class="icon-bar">
-            <a href="index.html"><i class="fas fa-home"></i></a>
-            <a href="#about" onclick="SectionVisible('hiddensection')"> <i class="fas fa-user"></i></a>
-            <a href="https://twitter.com/nj_marron" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="navBar">
+            <div class="navIcon"><a href="index.html" class="test"><i class="fas fa-home"></i></a></div>
+            <div class="navIcon"><a href="about.html"> <i class="fas fa-user"></i></a></div>
+            <div class="navIcon"><a href="contact.html"> <i class="far fa-envelope"></i></a></div>
         </div>
         
     </header> 
         
+    <section class="mainbox">
+        <div><q>The way to get started is to quit talking and begin doing. <span class="fontadjust">-Walt Disney</span></q></div>
+        <div class="about"><h2>Nick Marron - Javascript Student</h2></div>
 
-    <div class="pagecontent" id="hiddensection">
-        <div class="box">
-            <div class="about"><h2>Nick Marron - Javascript Student</h2></div>
-            <div><img class="profilepic" src="TwitterProfilePic.jpg" alt="Me" height="350" width="300"></div>
+    </section>
+
+
+    <footer>
+            
+        <div class="socialMedia">
+            <div class="mediaIcon"><a href="https://github.com/manmarron" target="_blank"><i class="fab fa-github"></i></a></div>
+            <div class="mediaIcon"><a href="https://www.linkedin.com/in/nicholasmarron/" target="_blank"><i class="fab fa-linkedin"></i></div>
+            <div class="mediaIcon"><a href="https://twitter.com/nj_marron" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="mediaIcon"><a href="https://www.facebook.com/nick.marron" target="_blank"><i class="fab fa-facebook"></i></a></div>
+            <div class="mediaIcon">&copy Nick Marron</div>
         </div>
-            <div class="box1">
-            <div><a href="#footer"><img src="sports.jpg" class="Interestpics" alt="sports" onclick="SectionVisible('subInterests')" height="200" width="200"></a></div>
-            <div><a href="#footer"><img src="codingicon.png" class="Interestpics" alt="coding" onclick="SectionVisible('subcode')" height="200" width="200"></a></div>
-            <div><a href="#footer"><img  src="films.gif" class="Interestpics" alt="Films" onclick="SectionVisible('subfilms')" height="200" width="200"></a></div>
-        </div>
-    </div>
-
-
-<footer id="footer">  
-    <div class="box2">
-        <div class="popUpInterests" id="subInterests"><p>Main interest is Rugby union and my favourite team is Sale Sharks.<br>I also enjoy football; Manchester united!<br>and hiking.</p></div>
         
-        <div class="popUpcode" id="subcode"><p>Of course my passion is coding!</p></div>
-
-        
-        <div class="popUpFilms" id="subfilms"><p>I am a big fan of films</p>        
-            <figure>
-                <figcaption>My top 5 Films (no particular order):</figcaption>
-                    <ul id="FilmList">
-                        <li>Remeber the Titans</li>
-                        <li>The Shawshank Redemption</li>
-                        <li>Star Wars Saga</li>
-                        <li>Saving Private Ryan</li>
-                        <li>The Internship</li>
-                    </ul>
-            </figure>
-        </div>
-    </div>
 </footer>
-    <!----------------------------------------------- JS Script ---------------------------------------------------------->
-<script>
 
-        function SectionVisible(FieldLabel) { 
 
-            var subdisplaytype = document.getElementById(FieldLabel).style.display
-
-            if (arguments.length > 0){
-                for(var i=0; i < arguments.length; i++) {
-
-                    document.getElementById('subInterests').style.display = "none";
-                    document.getElementById('subcode').style.display = "none";
-                    document.getElementById('subfilms').style.display = "none";
-                    
-
-                    if (subdisplaytype === "none" || subdisplaytype === '') {
-                        document.getElementById(arguments[i]).style.display = "flex";
-                        
-                    } else {
-                        document.getElementById(arguments[i]).style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
-<!----------------------------------------------- JS Script ---------------------------------------------------------->
 
 </body>
 </html>

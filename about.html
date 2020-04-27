@@ -10,31 +10,88 @@
     
     <body class="aboutPage">
         
-        <nav class="navBar">
-            <a href="index.html"><i class="fas fa-home"></i></a>
-            <a href="about.html"> <i class="fas fa-user"></i></a>
-            <a href="contactMePage.html"> <i class="far fa-envelope"></i></a>
-        </nav>
+        <div class="navBar">
+            <div class="navIcon"><a href="index.html" class="test"><i class="fas fa-home"></i></a></div>
+            <div class="navIcon"><a href="about.html"> <i class="fas fa-user"></i></a></div>
+            <div class="navIcon"><a href="contact.html"> <i class="far fa-envelope"></i></a></div>
+        </div>
 
-        <header><h2>About me</h2></header>
+        <header><div class="pageheadercontainer"><h2>About me</h2></div></header>
 
-        <section >
+        <section class="summarycontainer">
             <div class="summaryMe">
-                <p>After several years working in the financial services sector I decided to create my own role which involved creating automation using; VB, VBA, SQL, HTML, CSS. And this began my interest in coding.</p>
-                <p>I have now started my course at <a href="https://www.manchestercodes.com/">Manchester Codes.</a>  And I am looking forward to the new opportunities which await me.</p>
+                <p>After several years working in the financial services sector I decided to create my own role which involved creating automation using;
+                    VB, VBA, SQL, HTML, CSS. And this began my interest in coding.</p>
+                <p>I have now started my course at <a href="https://www.manchestercodes.com/" target="_blank">Manchester Codes.</a>  And I am looking forward to the new opportunities which await me.</p>
                 <p>To find out anything more please explore below</p>
             </div>
+
+            <div class="box1">
+                <div><a href="#subInterests"><img src="sports.jpg" class="Interestpics" id="interestsclick" alt="sports" onclick="SectionVisible('subInterests')" height="200" width="200"></a></div>
+                <div><a href="#subcode"><img src="codingicon.png" class="Interestpics" id="codingclick" alt="coding" onclick="SectionVisible('subcode')" height="200" width="200"></a></div>
+                <div><a href="#subfilms"><img  src="films.gif" class="Interestpics" id="filmsclick" alt="Films" onclick="SectionVisible('subfilms')" height="200" width="200"></a></div>
+            </div>
+
+
+
         </section>
 
-
-        <footer>
-            <div class="footerBar">
-                <ul class="socialMedia">
-                    <li><a href="https://twitter.com/nj_marron" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/nick.marron" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://github.com/manmarron" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
+        <div class="box2" id="div1">
+            <div class="popUpInterests" id="subInterests"><p>Main interest is Rugby union and my favourite team is Sale Sharks.<br>I also enjoy football; Manchester united!<br>and hiking.</p></div>
+            
+            <div class="popUpcode" id="subcode"><p>Of course my passion is coding!</p></div>
+    
+            
+            <div class="popUpFilms" id="subfilms">       
+                <figure>
+                    <figcaption>I am a big fan of films. <br> My top 5 Films (no particular order):</figcaption>
+                        <ul id="FilmList" style="list-style-type: none;">
+                            <li>Remeber the Titans</li>
+                            <li>The Shawshank Redemption</li>
+                            <li>Star Wars Saga</li>
+                            <li>Saving Private Ryan</li>
+                            <li>The Internship</li>
+                        </ul>
+                </figure>
             </div>
-        </footer>
+        </div>
+    
+        <footer>
+            
+            <div class="socialMedia">
+                <div class="mediaIcon"><a href="https://github.com/manmarron" target="_blank"><i class="fab fa-github"></i></a></div>
+                <div class="mediaIcon"><a href="https://www.linkedin.com/in/nicholasmarron/" target="_blank"><i class="fab fa-linkedin"></i></div>
+                <div class="mediaIcon"><a href="https://twitter.com/nj_marron" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                <div class="mediaIcon"><a href="https://www.facebook.com/nick.marron" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                <div class="mediaIcon">&copy Nick Marron</div>
+            </div>
+            
+    </footer>
+    <script>
+
+        function SectionVisible(FieldLabel) { 
+
+            var subdisplaytype = document.getElementById(FieldLabel).style.display
+
+            if (arguments.length > 0){
+                for(var i=0; i < arguments.length; i++) {
+
+                    document.getElementById('subInterests').style.display = "none";
+                    document.getElementById('subcode').style.display = "none";
+                    document.getElementById('subfilms').style.display = "none";
+
+                    if (subdisplaytype === "none" || subdisplaytype === '') {
+                        document.getElementById(arguments[i]).style.display = "flex";
+                        document.getElementById(arguments[i]).style.justifyContent = "center";
+
+
+                    } else {
+                        
+                        document.getElementById(arguments[i]).style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
     </body>
 </html>
